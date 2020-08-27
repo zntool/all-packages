@@ -1,0 +1,97 @@
+{
+    "name": "tpl/all",
+    "description": "All in one",
+    "type": "project",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2",
+
+        "znsandbox/sandbox": "dev-master",
+        "znsandbox/yii2-legacy": "dev-master",
+        "znsandbox/telegram": "dev-master",
+        "znsandbox/web": "dev-master",
+        "znsandbox/bundle": "dev-master",
+
+        "znbundle/article": "dev-master",
+        "znbundle/messenger": "dev-master",
+        "znbundle/queue": "dev-master",
+        "znbundle/reference": "dev-master",
+        "znbundle/storage": "dev-master",
+        "znbundle/user": "dev-master",
+        "znbundle/notify": "dev-master",
+
+        "zncore/db": "dev-master",
+        "zncore/ddd": "dev-master",
+
+        "znlib/rest": "dev-master",
+        "znlib/socket": "dev-master",
+
+        "zncrypt/jwt": "dev-master",
+        "zncrypt/pki": "dev-master",
+        "zncrypt/tunnel": "dev-master",
+
+        "znfixture/geo": "dev-master",
+        "znfixture/info-bot": "dev-master",
+
+        "znfork/danog_madelineproto": "dev-master"
+    },
+    "require-dev": {
+        "zntool/dev": "dev-master",
+        "zntool/test": "dev-master",
+        "zndoc/rest-api": "dev-master"
+    },
+    "config": {
+        "secure-http": false,
+        "process-timeout": 1800
+    },
+    "extra": {
+        "installer-types": [
+            "bower-asset",
+            "npm-asset"
+        ],
+        "installer-paths": {
+            "vendor/{$vendor}/{$name}/": [
+                "type:bower-asset",
+                "type:npm-asset"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/znsandbox/sandbox.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/znsandbox/yii2-legacy"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/znsandbox/telegram"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/znsandbox/bundle"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/znsandbox/web"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/znfixture/geo"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/znfixture/info-bot"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/znfork/danog_madelineproto"
+        }
+    ]
+}
